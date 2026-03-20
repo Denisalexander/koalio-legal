@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Koalio — Aviso Legal y Política de Privacidad</title>
+  <style>
+    :root {
+      --accent: #5a9e4b;
+      --accent-light: #eef7eb;
+      --text: #1a1a1a;
+      --muted: #555;
+      --border: #e0e0e0;
+      --bg: #fafafa;
+      --white: #ffffff;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.7;
+      font-size: 16px;
+    }
+
+    header {
+      background: var(--white);
+      border-bottom: 1px solid var(--border);
+      padding: 24px 0;
+      text-align: center;
+    }
+    header .logo {
+      font-size: 28px;
+      font-weight: 800;
+      color: var(--accent);
+      letter-spacing: -0.5px;
+    }
+    header p {
+      color: var(--muted);
+      font-size: 14px;
+      margin-top: 4px;
+    }
+
+    nav {
+      background: var(--white);
+      border-bottom: 1px solid var(--border);
+      padding: 0 24px;
+      display: flex;
+      gap: 0;
+      overflow-x: auto;
+      justify-content: center;
+    }
+    nav a {
+      display: block;
+      padding: 14px 20px;
+      font-size: 14px;
+      font-weight: 600;
+      color: var(--muted);
+      text-decoration: none;
+      border-bottom: 3px solid transparent;
+      white-space: nowrap;
+      transition: color 0.2s, border-color 0.2s;
+    }
+    nav a:hover { color: var(--accent); border-color: var(--accent); }
+
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 40px 24px 80px;
+    }
+
+    .section {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 36px;
+      margin-bottom: 24px;
+    }
+
+    .section-badge {
+      display: inline-block;
+      background: var(--accent-light);
+      color: var(--accent);
+      font-size: 11px;
+      font-weight: 800;
+      letter-spacing: 1px;
+      padding: 4px 10px;
+      border-radius: 999px;
+      margin-bottom: 12px;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      font-size: 26px;
+      font-weight: 800;
+      color: var(--text);
+      margin-bottom: 8px;
+      line-height: 1.3;
+    }
+    h2 {
+      font-size: 20px;
+      font-weight: 700;
+      color: var(--text);
+      margin: 28px 0 10px;
+    }
+    h2:first-of-type { margin-top: 0; }
+    h3 {
+      font-size: 16px;
+      font-weight: 700;
+      color: var(--text);
+      margin: 20px 0 6px;
+    }
+
+    p { color: var(--muted); margin-bottom: 12px; }
+    p:last-child { margin-bottom: 0; }
+
+    ul, ol {
+      color: var(--muted);
+      padding-left: 20px;
+      margin-bottom: 12px;
+    }
+    li { margin-bottom: 6px; }
+
+    .highlight {
+      background: var(--accent-light);
+      border-left: 4px solid var(--accent);
+      border-radius: 0 8px 8px 0;
+      padding: 14px 18px;
+      margin: 16px 0;
+    }
+    .highlight p { color: var(--text); margin: 0; font-size: 15px; }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 16px 0;
+      font-size: 14px;
+    }
+    th {
+      background: var(--accent-light);
+      color: var(--accent);
+      font-weight: 700;
+      text-align: left;
+      padding: 10px 14px;
+      font-size: 12px;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+    }
+    td {
+      padding: 10px 14px;
+      border-bottom: 1px solid var(--border);
+      color: var(--muted);
+      vertical-align: top;
+    }
+    tr:last-child td { border-bottom: none; }
+
+    .contact-box {
+      background: var(--accent-light);
+      border-radius: 12px;
+      padding: 20px 24px;
+      margin: 16px 0;
+    }
+    .contact-box p { color: var(--text); margin: 0; }
+    .contact-box a { color: var(--accent); font-weight: 600; }
+
+    .tag {
+      display: inline-block;
+      background: #f0f0f0;
+      color: var(--muted);
+      font-size: 13px;
+      font-weight: 600;
+      padding: 3px 10px;
+      border-radius: 6px;
+      margin: 2px;
+    }
+
+    .updated {
+      text-align: center;
+      color: #aaa;
+      font-size: 13px;
+      margin-top: 40px;
+    }
+
+    a { color: var(--accent); }
+
+    @media (max-width: 600px) {
+      .section { padding: 24px 18px; }
+      h1 { font-size: 22px; }
+      nav a { padding: 12px 14px; font-size: 13px; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="logo">🐨 Koalio</div>
+  <p>Información Legal</p>
+</header>
+
+<nav>
+  <a href="#aviso-legal">Aviso Legal</a>
+  <a href="#privacidad">Privacidad</a>
+  <a href="#datos">Datos que tratamos</a>
+  <a href="#derechos">Tus derechos</a>
+  <a href="#analytics">Analytics</a>
+</nav>
+
+<div class="container">
+
+  <!-- ── AVISO LEGAL ────────────────────────────────────────────── -->
+  <div class="section" id="aviso-legal">
+    <span class="section-badge">Aviso Legal</span>
+    <h1>Aviso Legal e Información General</h1>
+
+    <p>En cumplimiento de la Ley 34/2002, de 11 de julio, de Servicios de la Sociedad de la Información y del Comercio Electrónico (LSSI-CE), se pone a disposición del usuario la siguiente información:</p>
+
+    <h2>Titular de la aplicación</h2>
+    <table>
+      <tr><th>Campo</th><th>Información</th></tr>
+      <tr><td>Nombre / Razón social</td><td>[TU NOMBRE COMPLETO O EMPRESA]</td></tr>
+      <tr><td>NIF / CIF</td><td>[TU NIF]</td></tr>
+      <tr><td>Domicilio</td><td>[TU DIRECCIÓN, CIUDAD, CÓDIGO POSTAL, ESPAÑA]</td></tr>
+      <tr><td>Correo electrónico de contacto</td><td><a href="mailto:legal@koalio.app">legal@koalio.app</a></td></tr>
+      <tr><td>Aplicación</td><td>Koalio</td></tr>
+      <tr><td>Identificador Android</td><td>com.koalio.app</td></tr>
+      <tr><td>Identificador iOS</td><td>com.koalio.app</td></tr>
+    </table>
+
+    <h2>Objeto y ámbito de aplicación</h2>
+    <p>Koalio es una aplicación móvil de planificación nutricional que ayuda a los usuarios a gestionar su alimentación diaria, planificar menús semanales y hacer seguimiento de su progreso hacia objetivos de salud.</p>
+    <p>El acceso y uso de la aplicación atribuye la condición de usuario e implica la aceptación plena de las presentes condiciones legales.</p>
+
+    <h2>Propiedad intelectual e industrial</h2>
+    <p>Todos los contenidos de Koalio —incluyendo textos, imágenes, diseño, código fuente, logotipos y bases de datos de recetas— son titularidad del responsable o han sido debidamente licenciados. Queda prohibida su reproducción, distribución o modificación sin autorización expresa.</p>
+
+    <h2>Exclusión de responsabilidad</h2>
+    <p>Koalio proporciona información nutricional con carácter orientativo y no constituye asesoramiento médico ni dietético profesional. El usuario debe consultar a un profesional sanitario antes de realizar cambios significativos en su dieta.</p>
+
+    <h2>Legislación aplicable y jurisdicción</h2>
+    <p>Las presentes condiciones se rigen por la legislación española. Para cualquier controversia derivada del uso de la aplicación, las partes se someten a los Juzgados y Tribunales del domicilio del usuario, conforme a la normativa de protección del consumidor.</p>
+  </div>
+
+  <!-- ── POLÍTICA DE PRIVACIDAD ────────────────────────────────── -->
+  <div class="section" id="privacidad">
+    <span class="section-badge">Privacidad</span>
+    <h1>Política de Privacidad</h1>
+
+    <div class="highlight">
+      <p>📱 <strong>Dato importante:</strong> Todos tus datos personales (peso, objetivos, planes de comida) se almacenan <strong>únicamente en tu dispositivo</strong>. No se envían a nuestros servidores ni se comparten con terceros salvo lo indicado en esta política.</p>
+    </div>
+
+    <h2>Responsable del tratamiento</h2>
+    <p>El responsable del tratamiento de los datos personales recogidos a través de Koalio es:</p>
+    <div class="contact-box">
+      <p><strong>[TU NOMBRE COMPLETO O EMPRESA]</strong><br>
+      NIF: [TU NIF]<br>
+      Dirección: [TU DIRECCIÓN COMPLETA]<br>
+      Email: <a href="mailto:privacidad@koalio.app">privacidad@koalio.app</a></p>
+    </div>
+
+    <h2>Base jurídica del tratamiento</h2>
+    <ul>
+      <li><strong>Datos de perfil y salud:</strong> consentimiento explícito del usuario al introducirlos voluntariamente (art. 6.1.a y art. 9.2.a RGPD).</li>
+      <li><strong>Analytics de uso:</strong> consentimiento explícito del usuario al aceptar el uso de analytics (art. 6.1.a RGPD).</li>
+      <li><strong>Datos técnicos mínimos:</strong> interés legítimo para el correcto funcionamiento de la aplicación (art. 6.1.f RGPD).</li>
+    </ul>
+
+    <h2>Finalidad del tratamiento</h2>
+    <ul>
+      <li>Permitir al usuario gestionar su planificación nutricional y seguimiento de objetivos de salud.</li>
+      <li>Calcular recomendaciones calóricas y de macronutrientes personalizadas.</li>
+      <li>Mejorar la aplicación a través del análisis anónimo de uso (solo con consentimiento).</li>
+      <li>Sincronizar el catálogo de recetas desde nuestros servidores (sin datos personales del usuario).</li>
+    </ul>
+
+    <h2>Destinatarios de los datos</h2>
+    <p>Koalio no vende ni cede datos personales a terceros. Únicamente se comparten datos con los siguientes proveedores de servicios, vinculados por acuerdos de tratamiento de datos:</p>
+
+    <table>
+      <tr>
+        <th>Proveedor</th>
+        <th>Finalidad</th>
+        <th>País</th>
+        <th>Garantías</th>
+      </tr>
+      <tr>
+        <td><strong>Google LLC (Firebase Analytics)</strong></td>
+        <td>Análisis anónimo de comportamiento en la app (solo con consentimiento)</td>
+        <td>EE.UU.</td>
+        <td>Marco EU-EE.UU. de Privacidad de Datos (Data Privacy Framework)</td>
+      </tr>
+      <tr>
+        <td><strong>Supabase Inc.</strong></td>
+        <td>Sincronización del catálogo de recetas (datos no personales)</td>
+        <td>EE.UU. / UE</td>
+        <td>Cláusulas Contractuales Tipo (SCCs)</td>
+      </tr>
+    </table>
+
+    <h2>Transferencias internacionales</h2>
+    <p>Google LLC está adherida al Marco de Privacidad de Datos UE-EE.UU. aprobado por la Comisión Europea, lo que garantiza un nivel de protección adecuado. Supabase utiliza infraestructura en la UE para datos europeos y aplica Cláusulas Contractuales Tipo para cualquier transferencia adicional.</p>
+
+    <h2>Plazo de conservación</h2>
+    <ul>
+      <li><strong>Datos de perfil y salud:</strong> almacenados localmente en el dispositivo hasta que el usuario elimina la aplicación o borra los datos desde los ajustes del dispositivo.</li>
+      <li><strong>Datos de analytics:</strong> conservados por Google según su política de retención estándar (hasta 14 meses).</li>
+      <li><strong>Registros de servicio técnico:</strong> máximo 12 meses.</li>
+    </ul>
+  </div>
+
+  <!-- ── DATOS QUE TRATAMOS ─────────────────────────────────────── -->
+  <div class="section" id="datos">
+    <span class="section-badge">Datos que tratamos</span>
+    <h1>¿Qué datos recoge Koalio?</h1>
+
+    <h2>Datos que tú introduces voluntariamente</h2>
+    <p>Se almacenan exclusivamente en tu dispositivo y nunca se transmiten a nuestros servidores:</p>
+
+    <table>
+      <tr><th>Dato</th><th>Finalidad</th></tr>
+      <tr><td>Nombre o alias</td><td>Personalización de la interfaz</td></tr>
+      <tr><td>Peso actual, peso inicial y peso objetivo</td><td>Cálculo de progreso y objetivos</td></tr>
+      <tr><td>Edad y sexo</td><td>Cálculo de necesidades calóricas (fórmula Mifflin-St Jeor)</td></tr>
+      <tr><td>Objetivo (perder peso, mantener, ganar músculo)</td><td>Personalización del plan nutricional</td></tr>
+      <tr><td>Nivel de actividad física</td><td>Cálculo del gasto calórico diario</td></tr>
+      <tr><td>Preferencias dietéticas (vegetariano, vegano, sin gluten)</td><td>Filtrado de recetas</td></tr>
+      <tr><td>Alergias y alimentos no deseados</td><td>Exclusión de ingredientes en recomendaciones</td></tr>
+      <tr><td>Registros de comidas cocinadas e hidratación</td><td>Seguimiento nutricional diario</td></tr>
+      <tr><td>Registros de ejercicio físico</td><td>Cálculo de calorías quemadas</td></tr>
+      <tr><td>Planes de menú semanal</td><td>Planificación nutricional</td></tr>
+    </table>
+
+    <h2>Datos técnicos recogidos automáticamente</h2>
+    <p>Solo si el usuario acepta el uso de analytics:</p>
+    <ul>
+      <li>Pantallas visitadas dentro de la aplicación</li>
+      <li>Acciones realizadas (recetas cocinadas, planes generados, regeneraciones)</li>
+      <li>Tipo de dispositivo, versión del sistema operativo y versión de la app</li>
+      <li>País e idioma del dispositivo</li>
+    </ul>
+    <div class="highlight">
+      <p>🔒 Firebase Analytics <strong>no recoge nombre, peso, objetivos ni ningún dato de salud</strong>. Solo recoge datos de comportamiento de uso de forma agregada y sin identificación personal directa.</p>
+    </div>
+
+    <h2>Datos que NO recogemos</h2>
+    <p>Koalio no recoge:</p>
+    <ul>
+      <li>Dirección de correo electrónico ni contraseñas (no hay registro de usuario)</li>
+      <li>Número de teléfono</li>
+      <li>Datos de pago o bancarios</li>
+      <li>Ubicación geográfica</li>
+      <li>Contactos del dispositivo</li>
+      <li>Fotografías (salvo las que el usuario suba expresamente para escaneo de recibos)</li>
+    </ul>
+  </div>
+
+  <!-- ── DERECHOS ────────────────────────────────────────────────── -->
+  <div class="section" id="derechos">
+    <span class="section-badge">Tus derechos</span>
+    <h1>Derechos del usuario (RGPD)</h1>
+
+    <p>De acuerdo con el Reglamento General de Protección de Datos (RGPD) y la Ley Orgánica 3/2018 de Protección de Datos Personales y garantía de los derechos digitales (LOPDGDD), tienes los siguientes derechos:</p>
+
+    <h3>✅ Derecho de acceso</h3>
+    <p>Puedes consultar todos tus datos directamente en la aplicación, desde el apartado de Perfil. Dado que los datos se almacenan en tu dispositivo, tienes acceso completo en todo momento.</p>
+
+    <h3>✏️ Derecho de rectificación</h3>
+    <p>Puedes modificar cualquier dato desde la sección de Perfil → Datos personales en cualquier momento.</p>
+
+    <h3>🗑️ Derecho de supresión («derecho al olvido»)</h3>
+    <p>Puedes eliminar todos tus datos desinstalando la aplicación o borrando los datos de la app desde los ajustes de tu dispositivo (Ajustes → Aplicaciones → Koalio → Borrar datos).</p>
+
+    <h3>⏸️ Derecho de limitación del tratamiento</h3>
+    <p>Puedes desactivar el analytics en cualquier momento desde Perfil → Más ajustes → Privacidad.</p>
+
+    <h3>📦 Derecho de portabilidad</h3>
+    <p>Puedes solicitar una copia de tus datos enviando un email a <a href="mailto:privacidad@koalio.app">privacidad@koalio.app</a>.</p>
+
+    <h3>❌ Derecho de oposición</h3>
+    <p>Puedes oponerte al tratamiento de datos para analytics desactivándolo desde los ajustes de la aplicación.</p>
+
+    <h3>🔄 Derecho a retirar el consentimiento</h3>
+    <p>Puedes retirar el consentimiento prestado para el uso de analytics en cualquier momento sin que ello afecte al uso normal de la aplicación.</p>
+
+    <h2>Cómo ejercer tus derechos</h2>
+    <div class="contact-box">
+      <p>Para ejercer cualquiera de los derechos anteriores, escríbenos a:<br>
+      📧 <a href="mailto:privacidad@koalio.app">privacidad@koalio.app</a><br><br>
+      Responderemos en un plazo máximo de <strong>30 días</strong> naturales, conforme a lo establecido en el art. 12 del RGPD.</p>
+    </div>
+
+    <h2>Reclamación ante la autoridad de control</h2>
+    <p>Si consideras que el tratamiento de tus datos no se ajusta a la normativa vigente, tienes derecho a presentar una reclamación ante la <strong>Agencia Española de Protección de Datos (AEPD)</strong>:</p>
+    <ul>
+      <li>Web: <a href="https://www.aepd.es" target="_blank" rel="noopener">www.aepd.es</a></li>
+      <li>Dirección: C/ Jorge Juan, 6, 28001 Madrid</li>
+      <li>Teléfono: 901 100 099</li>
+    </ul>
+  </div>
+
+  <!-- ── ANALYTICS ──────────────────────────────────────────────── -->
+  <div class="section" id="analytics">
+    <span class="section-badge">Analytics y Cookies</span>
+    <h1>Uso de Analytics</h1>
+
+    <div class="highlight">
+      <p>🍪 Koalio es una aplicación móvil y <strong>no utiliza cookies</strong> en el sentido técnico del término. Sin embargo, utiliza tecnologías similares de seguimiento de comportamiento a través de Firebase Analytics.</p>
+    </div>
+
+    <h2>Firebase Analytics (Google)</h2>
+    <p>Con tu consentimiento, Koalio utiliza Firebase Analytics, un servicio de análisis de aplicaciones proporcionado por Google LLC. Este servicio nos permite entender cómo los usuarios interactúan con la app para mejorarla.</p>
+
+    <h3>Qué datos recoge Firebase Analytics:</h3>
+    <ul>
+      <li>Pantallas visitadas y tiempo de uso</li>
+      <li>Eventos de uso: recetas vistas, planes generados, comidas registradas</li>
+      <li>Información técnica del dispositivo (modelo, sistema operativo, versión de la app)</li>
+      <li>País e idioma configurado en el dispositivo</li>
+      <li>Un identificador de instalación anónimo (no vinculado a tu identidad)</li>
+    </ul>
+
+    <h3>Qué NO recoge:</h3>
+    <ul>
+      <li>Tu nombre, peso, objetivos ni ningún dato de salud</li>
+      <li>Tu dirección IP completa (se anonimiza)</li>
+      <li>Datos de otros perfiles o aplicaciones</li>
+    </ul>
+
+    <h3>Base legal:</h3>
+    <p>El uso de Firebase Analytics se basa en tu consentimiento expreso (art. 6.1.a RGPD), que puedes otorgar o retirar en cualquier momento desde <strong>Perfil → Más ajustes → Privacidad</strong>.</p>
+
+    <h3>Más información sobre Firebase:</h3>
+    <ul>
+      <li><a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">Política de privacidad de Firebase</a></li>
+      <li><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Política de privacidad de Google</a></li>
+    </ul>
+
+    <h2>Gestión del consentimiento</h2>
+    <p>Al iniciar Koalio por primera vez, se te preguntará si deseas activar el analytics de uso. Puedes cambiar tu decisión en cualquier momento desde:</p>
+    <p><span class="tag">Perfil</span> → <span class="tag">Más ajustes</span> → <span class="tag">Privacidad y analytics</span></p>
+    <p>Si rechazas o desactivas el analytics, la aplicación funcionará exactamente igual. <strong>El rechazo del analytics no limita ninguna funcionalidad de Koalio.</strong></p>
+
+    <h2>Actualizaciones de esta política</h2>
+    <p>Podemos actualizar esta política para reflejar cambios en la aplicación o en la legislación aplicable. Te notificaremos de cambios significativos a través de la propia aplicación. La fecha de última actualización aparece al pie de esta página.</p>
+  </div>
+
+  <p class="updated">Última actualización: Marzo 2026 · Koalio · <a href="mailto:legal@koalio.app">legal@koalio.app</a></p>
+
+</div>
+
+</body>
+</html>
